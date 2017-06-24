@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity
     private ActionBar mActionBar;
     private Toolbar mToolbar;
 
-
     public static final String PREFS_FILE = "MyPrefsFile";
 
     @Override
@@ -63,7 +62,10 @@ public class MainActivity extends AppCompatActivity
         FragmentTransaction ft = getFragmentManager().beginTransaction();
         DialogFragment dialogFragment = LoginDialogFrag.newInstance();
         dialogFragment.show(ft, "LoginDialog");
+    }
 
+    private void userLogout(){
+        mSharedPreferences.edit().clear().apply();
     }
 
     private void toolbarSetup() {
@@ -121,16 +123,27 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                return true;
 
-        switch (id) {
+            case R.id.action_login:
+                item.setVisible(false);
+                userLogin();
+                return true;
+
+            case R.id.action_logout:
+                item.setVisible(false);
+                userLogout();
+                return true;
 
             case android.R.id.home:
-                mDrawerLayout.openDrawer(GravityCompat.START);
-                break;
-        }
+                onBackPressed();
+                return true;
 
-        return super.onOptionsItemSelected(item);
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     public void addFragmentOnTop(Fragment fragment) {
@@ -147,7 +160,6 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         switch (id) {
