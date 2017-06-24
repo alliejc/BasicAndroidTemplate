@@ -128,12 +128,12 @@ public class MainActivity extends AppCompatActivity
                 return true;
 
             case R.id.action_login:
-                item.setVisible(false);
+                menuSetVisibility(item);
                 userLogin();
                 return true;
 
             case R.id.action_logout:
-                item.setVisible(false);
+                menuSetVisibility(item);
                 userLogout();
                 return true;
 
@@ -143,6 +143,14 @@ public class MainActivity extends AppCompatActivity
 
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void menuSetVisibility(MenuItem menuItem) {
+        if(menuItem.isVisible()){
+            menuItem.setVisible(false);
+        } else {
+            menuItem.setVisible(true);
         }
     }
 
