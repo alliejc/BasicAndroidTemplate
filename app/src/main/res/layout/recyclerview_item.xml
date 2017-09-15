@@ -32,7 +32,8 @@
                 android:layout_gravity="top|center_horizontal"
                 android:layout_margin="10dp"
                 android:gravity="top|center_horizontal"
-                android:tint="@color/black"
+                android:background="@color/white"
+                android:tint="@color/colorAccent"
                 android:src="@drawable/icon_delete" />
         </LinearLayout>
 

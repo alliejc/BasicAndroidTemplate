@@ -23,7 +23,8 @@
                 android:layout_margin="10dp"
                 android:gravity="top|center_horizontal"
                 android:src="@drawable/icon_user"
-                android:tint="@color/black"/>
+                android:background="@color/white"
+                />
 
             <ImageButton
                 android:id="@+id/add_button"
@@ -32,6 +33,8 @@
                 android:layout_gravity="top|center_horizontal"
                 android:layout_margin="10dp"
                 android:gravity="top|center_horizontal"
+                android:background="@color/white"
+                android:tint="@color/colorAccent"
                 android:src="@drawable/icon_add" />
         </LinearLayout>
 
