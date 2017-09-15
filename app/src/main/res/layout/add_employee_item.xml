@@ -22,24 +22,23 @@
                 android:layout_gravity="top|center_horizontal"
                 android:layout_margin="10dp"
                 android:gravity="top|center_horizontal"
-                android:src="@drawable/icon_default_user" />
+                android:src="@drawable/icon_user"
+                android:tint="@color/black"/>
 
             <ImageButton
-                android:id="@+id/delete_button"
+                android:id="@+id/add_button"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_gravity="top|center_horizontal"
                 android:layout_margin="10dp"
                 android:gravity="top|center_horizontal"
-                android:tint="@color/colorAccent"
                 android:src="@drawable/icon_add" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="5dp">
+            android:orientation="vertical">
 
             <EditText
                 android:id="@+id/name_edit_text"

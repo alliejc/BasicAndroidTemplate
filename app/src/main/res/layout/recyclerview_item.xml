@@ -22,7 +22,8 @@
                 android:layout_gravity="top|center_horizontal"
                 android:layout_margin="10dp"
                 android:gravity="top|center_horizontal"
-                android:src="@drawable/icon_default_user" />
+                android:src="@drawable/icon_user"
+                android:tint="@color/black"/>
 
             <ImageButton
                 android:id="@+id/delete_button"
@@ -31,7 +32,7 @@
                 android:layout_gravity="top|center_horizontal"
                 android:layout_margin="10dp"
                 android:gravity="top|center_horizontal"
-                android:tint="@color/colorAccent"
+                android:tint="@color/black"
                 android:src="@drawable/icon_delete" />
         </LinearLayout>
 
