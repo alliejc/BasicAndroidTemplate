@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/user_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_margin="10dp"
+                android:gravity="top|center_horizontal"
+                android:src="@drawable/icon_default_user" />
+
+            <ImageButton
+                android:id="@+id/delete_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_margin="10dp"
+                android:gravity="top|center_horizontal"
+                android:tint="@color/colorAccent"
+                android:src="@drawable/icon_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/text_view_header_item"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="NAME"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_view_subheader1_item"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="SUBHEADER1"
+                android:textColor="@color/dark_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text_view_subheader2_item"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="SUBHEADER2"
+                android:textColor="@color/dark_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/text_view_subheader3_item"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="SUBHEADER3"
+                android:textColor="@color/dark_grey"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/list_divider"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+</LinearLayout>
