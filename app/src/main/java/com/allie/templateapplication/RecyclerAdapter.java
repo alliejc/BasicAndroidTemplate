@@ -43,7 +43,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
 
     }
 
-    //we probably need a method to add item to the recyclerview dynamically
+    //we probably need a method to add items to the recyclerview dynamically
 
 
     @Override

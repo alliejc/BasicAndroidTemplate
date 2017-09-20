@@ -43,60 +43,142 @@
             android:orientation="vertical"
             android:layout_margin="5dp">
 
-            <TextView
-                android:id="@+id/text_view_header_item"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginBottom="5dp"
-                android:layout_weight="1"
-                android:ellipsize="end"
-                android:gravity="center_vertical"
-                android:lines="1"
-                android:text="NAME"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/header_item"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight=".25"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:text="NAME:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_header_item"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
 
             <TextView
-                android:id="@+id/text_view_subheader1_item"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:id="@+id/subheader1_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginBottom="5dp"
-                android:layout_weight="1"
+                android:layout_weight=".25"
                 android:ellipsize="end"
                 android:gravity="center_vertical"
                 android:lines="1"
-                android:text="SUBHEADER1"
+                android:text="TITLE:"
                 android:textColor="@color/dark_grey"
                 android:textSize="12sp" />
 
-            <TextView
-                android:id="@+id/text_view_subheader2_item"
+                <TextView
+                    android:id="@+id/text_view_subheader1_item"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="12sp" />
+
+                </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/subheader2_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginBottom="5dp"
-                android:layout_weight="1"
+                android:layout_weight=".25"
                 android:ellipsize="end"
                 android:gravity="center_vertical"
                 android:lines="1"
-                android:text="SUBHEADER2"
+                android:text="ROLE:"
                 android:textColor="@color/dark_grey"
                 android:textSize="12sp" />
 
-            <TextView
-                android:id="@+id/text_view_subheader3_item"
+                <TextView
+                    android:id="@+id/text_view_subheader2_item"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="12sp" />
+                </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/subheader3_item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_weight="1"
+                android:layout_marginBottom="5dp"
+                android:layout_weight=".25"
                 android:ellipsize="end"
                 android:gravity="center_vertical"
                 android:lines="1"
-                android:text="SUBHEADER3"
+                android:text="TASKS:"
                 android:textColor="@color/dark_grey"
                 android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/text_view_subheader3_item"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="12sp" />
+                </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
